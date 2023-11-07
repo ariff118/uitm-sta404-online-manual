@@ -1,0 +1,48 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Statistics for Business and Social Sciences"
+  reader-mode: true
+   
+  page-footer: 
+    left: |
+      Statistics for Business and Social Sciences was authored by
+      Rosidah Ahmad and edited by Kamarul Ariffin Mansor, Ida Normaya Mohd Nasir, and Norin Rahayu Shamsuddin. 
+    right: |
+      This eBook contents was created with ❤️ by kammyariff
+  cover-image: cover2.png
+  favicon: cover2.png
+  repo-branch: main
+  repo-actions: [edit, issue]
+  chapters:
+    - index.qmd
+    
+    - preface.qmd
+    - 01-intro.qmd
+    - 02-descriptive.qmd
+    
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - r4ds.scss
+    code-link: true
+    
+    author-meta: "Rosidah Ahmad, Kamarul Ariffin Mansor. Ida Normaya Mohd Nasir, and Norin Rahayu Shamsudin"
+    include-in-header: "plausible.html"
+    callout_apperance: simple
+  
+  # editor: visual
+    
+  pdf:
+    documentclass: scrreprt
+    papersize: a4
+
+
+
