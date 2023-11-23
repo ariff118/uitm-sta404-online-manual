@@ -22,6 +22,7 @@ book:
     - preface.qmd
     - 01-intro.qmd
     - 02-descriptive.qmd
+    - 03-estimation.qmd
     
     - references.qmd
 

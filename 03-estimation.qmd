@@ -1,0 +1,491 @@
+# Estimation
+
+## Learning Objectives: {-}
+
+1. Describe and construct the interval estimation for the mean of the population parameter (both σ known and σ unknown) for **large and small sample size**.
+2. Describe and construct the interval estimation for the difference between two means (both σ known and σ unknown) for **independent** sample.
+3. Describe and construct the interval estimation for the difference between two means (both σ known and σ unknown) for **dependent** sample.
+
+## Introduction
+
+Estimation is the process in which a numerical value collected from a sample is assigned to a population parameter. The value(s) that is assigned to a population parameter based on the sample statistic is called an estimation while the sample statistic used to estimate population parameter is called an estimator. There are two (2) types of estimates that will be discussed in this chapter name as point estimate and interval estimate.
+
+![](images/ch3/picture1.png){width=500px}
+
+## Point Estimation
+
+A point estimate is a specific numerical value estimate of a parameter.
+
+The value calculated from a sample mean, $\bar{x}$ is the best point estimate of the population mean, $\mu$.
+In estimation, the calculation margin of error is calculated based on point estimation.
+
+## Interval Estimation\
+
+-	An **interval estimate** of a parameter is an **interval** or a **range** of values used to estimate the parameter based on observations from one sample. There are two (2) values in the interval estimate: **lower limit** and **upper limit**.\
+-	The interval constructed around the point estimate, but the estimate may or may not contain the value of the parameter being estimated.\
+-	Each interval constructed also regards a given confidence level and it is called a confidence interval.\
+-	A **confidence interval** is a specific interval estimate of a parameter determined by using data obtained from a sample and by using the specific confidence level of the estimate.\
+-	The **confidence level** of an interval estimate of a parameter is the probability that the interval estimate will contain the parameter. It is denoted by (1-)100%. The is called a **significance level** (probability that the parameter is not within the interval).\
+-	In constructing a confidence interval, researchers can choose any value for confidence level for example 90%, 95% and 99%.\
+
+### Interval Estimate for a Mean (when σ is Known/Unknown) 
+
+#### **CASE 1: Confidence Interval of the Mean for σ is Known and Large Sample Size (n ≥ 30)**
+
+$$
+\bar{X} – Z_{\frac{\alpha}{2}}\left(\frac{\sigma}{\sqrt{n}}\right) \lt \mu \lt \bar{X} + Z_{\frac{\alpha}{2}}\left(\frac{\sigma}{\sqrt{n}}\right)\ \ \ \ \ or\ \ \ \ \ \ \bar{X} \pm Z_{\frac{\alpha}{2}}\left(\frac{\sigma}{\sqrt{n}}\right)
+$$
+
+::: {.callout-tip}
+
+For a 90% confidence interval:  $z_{α/2}=1.65$\              
+For a 95% confidence interval:  $z_{α/2}=1.96$\
+For a 99% confidence interval:  $z_{α/2}=2.58$\
+
+::: {.column-margin}
+<span style="color:blue;">Note:</span> To determine the value of z, please refer to **Table 3** or **Table 4** from Statistical Tables.
+:::
+
+:::
+
+<span style="color:green;">**Example 3.1**</span>
+
+95% Confidence Interval of the Mean
+
+![](images/ch3/picture2.png){width=500px}
+
+ 
+Refer Table 3 or Table 4 to determine the value of z.
+
+![](images/ch3/picture3.png){width=500px}
+
+<span style="color:green;">**Example 3.2**</span>
+
+A researcher wishes to estimate the number of days it takes an automobile dealer to sell Aza Aveo. A sample of 50 cars had a mean time on the dealer’s lot of 54 days. Assume the population standard deviation to be 6.0 days. Find the best point estimate of the population mean and the 95% confidence interval of the population mean.
+
+<span style="color:red;">**Answer:**</span>
+
+The best point estimate of the mean ($\mu$) is 54 days.
+
+Given:
+
+$\bar{X} = 54,\ \sigma = 6.0,\ n = 50, 95\%\ confident\ level\ \rightarrow z = 1.96$
+
+95% confidence interval of the population mean:\
+
+:::: {.columns}
+
+::: {.column width="60%"}
+$$
+\begin{aligned}
+\bar{X} – Z_{\frac{\alpha}{2}}\left(\frac{\sigma}{\sqrt{n}}\right) &\lt \mu \lt \bar{X} + Z_{\frac{\alpha}{2}}\left(\frac{\sigma}{\sqrt{n}}\right) \\
+54 – 1.96\left(\frac{60}{\sqrt{50}}\right) &\lt \mu \lt 54 + 1.96\left(\frac{60}{\sqrt{50}}\right) \\
+54 - 1.663 &\lt \mu \lt 54 + 1.663 \\
+52.337 &\lt \mu \lt 55.663
+\end{aligned}
+$$
+:::
+
+::: {.column width="10%"}
+\
+\
+\
+or
+:::
+
+::: {.column width="30%"}
+$$
+\begin{aligned}
+\bar{X} &\pm Z_{\frac{\alpha}{2}}\left(\frac{\sigma}{\sqrt{n}}\right) \\
+54 &\pm 1.96\left(\frac{60}{\sqrt{50}}\right)\\
+54 &\pm 1.663 \\
+(52.337&,\ 55.663)
+\end{aligned}
+$$
+:::
+
+::::
+
+One can say with 95% confidence that the interval between 52 and 56 days contains the population mean, based on a sample of 50 automobiles.
+
+<span style="color:green;">**Example 3.3**</span>
+
+A large department store found that it averages 362 customers per hour. Assume that the standard deviation is 29.6 and a random sample of 40 hours was used to determine the average. Find the 99% confidence interval of the population mean.
+
+<span style="color:red;">**Answer:**</span>
+
+:::: {.columns}
+
+::: {.column width="60%"}
+$$
+\begin{aligned}
+\bar{X} – Z_{\frac{\alpha}{2}}\left(\frac{\sigma}{\sqrt{n}}\right) &\lt \mu \lt \bar{X} + Z_{\frac{\alpha}{2}}\left(\frac{\sigma}{\sqrt{n}}\right) \\
+362 – 2.58\left(\frac{29.6}{\sqrt{40}}\right) &\lt \mu \lt 362 + 2.58\left(\frac{29.6}{\sqrt{40}}\right) \\
+362 - 12.1 &\lt \mu \lt 362 + 12.1 \\
+349.9 &\lt \mu \lt 374.1
+\end{aligned}
+$$
+:::
+
+::: {.column width="10%"}
+\
+\
+\
+or
+:::
+
+::: {.column width="30%"}
+$$
+\begin{aligned}
+\bar{X} &\pm Z_{\frac{\alpha}{2}}\left(\frac{\sigma}{\sqrt{n}}\right) \\
+362 &\pm 2.58\left(\frac{29.6}{\sqrt{40}}\right)\\
+362 &\pm 12.1 \\
+(349.9&,\ 374.1)
+\end{aligned}
+$$
+:::
+
+::::
+
+Hence, one can be 99% confident that the mean number of customers that the store averages is between 350 and 374 customers per hour (rounding values).
+
+#### **CASE 2: Confidence Interval of the Mean for $\sigma$ is Unknown and Large Sample Size ($n \ge 30$)**
+
+$$
+\bar{X} – Z_{\frac{\alpha}{2}}\left(\frac{s}{\sqrt{n}}\right) \lt \mu \lt \bar{X} + Z_{\frac{\alpha}{2}}\left(\frac{s}{\sqrt{n}}\right)\ \ \ \ \ or\ \ \ \ \ \ \bar{X} \pm Z_{\frac{\alpha}{2}}\left(\frac{s}{\sqrt{n}}\right)
+$$
+
+<span style="color:green;">**Example 3.4**</span>
+
+The following data represent a sample of the assets (in millions of ringgit Malaysia) of 30 credit banks in Malaysia. Find the 90% confidence interval of the mean. Given standard deviation for the following data is 14.405.\
+
++-----+-----+-----+-----+----+----+-----+-----+-----+-----+
+|12.23|16.56|4.39 |2.89 |1.24|2.17|13.19|9.16 |1.42 |73.25|
++-----+-----+-----+-----+----+----+-----+-----+-----+-----+
+|1.91 |14.64|11.59|6.69 |1.06|8.74|3.17 |18.13|7.92 |4.78 |
++-----+-----+-----+-----+----+----+-----+-----+-----+-----+
+|16.85|40.22|2.42 |21.58|5.01|1.47|12.24|2.27 |12.77|2.76 |
++-----+-----+-----+-----+----+----+-----+-----+-----+-----+
+
+$$
+\begin{aligned}
+\bar{X} – Z_{\frac{\alpha}{2}}\left(\frac{s}{\sqrt{n}}\right) &\lt \mu \lt \bar{X} + Z_{\frac{\alpha}{2}}\left(\frac{s}{\sqrt{n}}\right) \\
+11.091 – 1.645\left(\frac{14.405}{\sqrt{30}}\right) &\lt \mu \lt 11.091 + 1.645\left(\frac{14.405}{\sqrt{30}}\right) \\
+11.091 - 4.326 &\lt \mu \lt 11.091 + 4.326 \\
+6.765 &\lt \mu \lt 15.417
+\end{aligned}
+$$
+
+One can be 90% confident that the population mean of the assets of all credit unions is between RM6.765 million and RM15.417 million, based on a sample of 30 credit unions.
+
+**Output from SPSS**
+
+<!-- Insert SPSS Output here -->
+
+Calculation based on the above output:
+
+$$
+\begin{aligned}
+\bar{X} &\pm Z_{\frac{\alpha}{2}}\left(\frac{s}{\sqrt{n}}\right) \\
+11.0907 &\pm 1.645\left(\frac{14.40545}{\sqrt{30}}\right)\\
+11.0907 &\pm 1.645(2.63006) \\
+11.0907 &\pm 4.3264 \\
+(6.7643&,\ 15.4171)
+\end{aligned}
+$$
+
+#### **CASE 3: Confidence Interval of the Mean for $\sigma$ is Unknown and Small Sample Size ($n \lt 30$)**
+
+$$
+\bar{X} – t_{\frac{\alpha}{2},df}\left(\frac{s}{\sqrt{n}}\right) \lt \mu \lt \bar{X} + t_{\frac{\alpha}{2},df}\left(\frac{s}{\sqrt{n}}\right)\ \ \ \ \ or\ \ \ \ \ \ \bar{X} \pm t_{\frac{\alpha}{2},df}\left(\frac{s}{\sqrt{n}}\right)
+$$
+
+::: {.column-margin}
+The degrees of freedom (df) are **$n-1$**.\
+<span style="color:blue;">Note:</span> Refer to **Table 7** from Statistical Table
+:::
+
+-	The value of σ, when it is not known, must be estimated using the standard deviation (s) of the sample.
+-	When standard deviation (s) is used, especially when the sample size is small (less than 30), critical values greater than the values for are used in confidence intervals to keep the interval at a given level, such as the 95%.
+-	These values are taken from the **Student _t_-distribution,** most often called the **_t_-distribution**.
+
+**Characteristics of the t -distribution**
+
+The t -distribution is like the standard normal distribution in these ways:
+
+-	It is bell-shaped.
+-	It is symmetric about the mean.
+-	The mean, median, and mode are equal to 0 and are located at the center of the distribution.
+-	The curve never touches the x-axis.
+
+The t-distribution differs from the standard normal distribution in the following ways:
+
+-	The variance is greater than 1.
+-	The t-distribution is a family of curves based on the concept of  **degrees of freedom** which is related to sample size.
+-	As the sample size increases, the t-distribution approaches the standard normal distribution.
+
+<span style="color:green;">**Example 3.5**</span>
+
+A random sample of 10 children found that their average growth for the first year was 9.8 inches. Assume the variable is normally distributed and the sample standard deviation is 0.96 inch. Find the 95% confidence interval of the population mean for growth during the first year.
+
+Given that $\bar{X}=9.8, s=0.96, n=10, df=10-1=9$
+
+$$
+\begin{aligned}
+\bar{X} – t_{\frac{\alpha}{2},df}\left(\frac{s}{\sqrt{n}}\right) \lt &\mu \lt \bar{X} + t_{\frac{\alpha}{2},df}\left(\frac{s}{\sqrt{n}}\right)\\
+9.8 – t_{\frac{0.05}{2},9}\left(\frac{0.96}{\sqrt{10}}\right) \lt &\mu \lt 9.8 + t_{\frac{0.05}{2},9}\left(\frac{0.96}{\sqrt{10}}\right)\\
+9.8 – 2.262\left(\frac{0.96}{\sqrt{10}}\right) \lt &\mu \lt 9.8 + 2.262\left(\frac{0.96}{\sqrt{10}}\right)\\
+9.11 \lt &\mu \lt 10.49
+\end{aligned}
+$$
+
+Therefore, one can be 95% confident that the population mean of the first-year growth is between 9.11 and 10.49 inches.
+
+<span style="color:green;">**Example 3.6**</span>
+
+The data represent a sample of the number of home fires started by candles for the past seven (7) years. Find the 99% confidence interval for the mean number of home fires started by candles each year.
+
+<center> 5460, 5900, 6090, 6310, 7160, 8440, 9930 </center>\
+
+:::: {.columns}
+
+::: {.column width="10%"}
+**Step 1**
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="88%"}
+Find the mean and standard deviation.  The mean is  $\bar{x}$ = 7041.4 and standard deviation $s$ = 1610.3.
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width="10%"}
+**Step 2**
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="88%"}
+Find $t_{\frac{\alpha}{2}}$ in Table 7.  The confidence level is 99%, and the degrees of freedom $df = 6$. $t_{\frac{0.99}{2},6} = 3.707$. 
+:::
+
+::::
+
+$$
+\begin{aligned}
+\bar{X} – t_{\frac{\alpha}{2},df}\ \left(\frac{s}{\sqrt{n}}\right) \lt &\mu \lt \bar{X} + t_{\frac{\alpha}{2},df}\ \left(\frac{s}{\sqrt{n}}\right)\\
+7041.4 – 3.707\ \left(\frac{1610.3}{\sqrt{7}}\right) \lt &\mu \lt 7041.4 + 3.707\ \left(\frac{1610.3}{\sqrt{7}}\right)\\
+7041.4 - 2256.21 \lt &\mu \lt 7041.4 + 2256.21 \\
+4785.19 \lt &\mu \lt 9297.61
+\end{aligned}
+$$
+
+One can be 99% confident that the population mean number of home fires started by candles each year is between 4785 and 9298, based on a sample of home fires occurring over a period of 7 years.\
+
+**Output from SPSS for the above data**\
+
+<center>
+![Table 3.3: One Sample Statistics](images/ch3/table3_3.png){width=400px}
+</center>
+
+<center>
+![Table 3.4: One-Sample Test](images/ch3/table3_4.png){width=500px}
+</center>
+
+$$
+\bar{X} \pm t_{\frac{\alpha}{2},df}\left(\frac{s}{\sqrt{n}}\right),\ df=6\\
+7041.43 \pm 3.707\left(\frac{1610.274}{\sqrt{7}}\right)\\
+7041.43 \pm 2256.18 \\
+(4785.25,\ 9297.61) \\
+or
+$$
+
+From the SPSS output, 99% confidence interval is (4784.99,9297.87).\
+
+### Estimation the Difference Between Two Means\
+
+**CASE 1: Testing the Difference Between Two Means of Independent Samples: Using the z Test**\
+
+Assumptions:\
+
+1. Both samples are random samples.
+2. The samples must be independent of each other. That is, there can be no relationship between the subjects in each sample.
+3. The standard deviations of both populations must be known; and if the sample sizes are greater than 30, the populations must be normally or approximately normally distributed.
+
+**Confidence Intervals for the Difference Between Two Means of Independent Samples: Large Samples**\
+
+Formula for the $z$ confidence interval for the difference between two means from independent populations\
+
+:::: {.columns}
+
+::: {.column width="10%"}
+i)
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="88%"}
+$(\bar{X_1}-\bar{X_2})-Z_{\frac{\alpha}{2}}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}}\lt(\mu_1-\mu_2)\lt(\bar{X_1}-\bar{X_2})+Z_{\frac{\alpha}{2}}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}}$ \
+or,\
+$(\bar{X_1}-\bar{X_2})\pm Z_{\frac{\alpha}{2}}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}}$ **(when $\sigma$ is known)**
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width="10%"}
+ii)
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="88%"}
+$(\bar{X_1}-\bar{X_2})-Z_{\frac{\alpha}{2}}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}\lt(\mu_1-\mu_2)\lt(\bar{X_1}-\bar{X_2})+Z_{\frac{\alpha}{2}}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}$ \
+or,\
+$(\bar{X_1}-\bar{X_2})\pm Z_{\frac{\alpha}{2}}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}$ **(when $\sigma$ is unknown)**
+:::
+
+::::
+
+<span style="color:green;">**Example 3.7**</span>\
+
+A study using two random samples of 35 people each found that the average amount of time those in the age group of 26–35 years spent per week on leisure activities was 39.6 hours, and those in the age group of 46–55 years spent 35.4 hours. Assume that the population standard deviation for those in the first and second age group found by previous studies are 6.3 and 5.8 hours respectively. At $\alpha$ = 0.05, find the 95% confidence interval for the difference between the means for the data.\
+
+<span style="color:red;">**Answer**</span>\
+
+Given that $\bar{X-1}=39.6,\ \bar{X_2}=35.4,\ \sigma_1=6.3,\ \sigma_2=5.8,\ n_1=35,\ n_2=35$\
+
+$$
+\begin{aligned}
+(\bar{X_1}-\bar{X_2})\ &\pm\ Z_{\frac{\alpha}{2}}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}} \\
+(39.6\ -\ 35.4)\ &\pm\ Z_{\frac{0.05}{2}}{\sqrt{\frac{6.3^2}{35}+\frac{5.8^2}{35}}} \\
+4.2\ &\pm\ 1.96{\sqrt{\frac{6.3^2}{35}+\frac{5.8^2}{35}}} \\
+&(1.363,\ 7.037)
+\end{aligned}
+$$
+
+>Interpretation:\
+With 95% confident, there is significant different on the average amount of time spent per week on leisure activities between the two-age group since 0 value is not included in the interval.
+
+**CASE 2: Difference Between Two Means of Independent Samples: _Using the t-test_ **\
+
+Assumptions:\
+
+1. The samples are random samples.
+2. The sample data are independent of one another.
+3. When the sample sizes are less than 30, the populations must be normally or approximately normally distributed.\
+
+The Independent t-test was used to compare the average values and determine the significant difference in the means of the two groups. The Independent t-test **assumes the variance of the two sample groups are approximately equal or the samples have homogeneity of variance**. The variance does not have too precisely equal but just close enough. The homogeneity of variance means the two groups are of the same nature or have the same kind of variability. To know if the variance is close enough to be called homogeneous or not, the **Levene Test for Equality of Variances** will be used.\
+
+The steps for conducting Levene Test using output from SPSS are as follow:\
+
+:::: {.columns}
+
+::: {.column width="10%"}
+Step 1:
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="88%"}
+Hypothesis\
+$H_0:\ \sigma_1^2=\ \sigma_2^2$ (Equal variances)\
+$H_1:\ \sigma_1^2\ne\ \sigma_2^2$ (Not equal variances)
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width="10%"}
+Step 2:
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="88%"}
+$\alpha$ value
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width="10%"}
+Step 3:
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="88%"}
+*p*-value
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width="10%"}
+Step 4 & 5:
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="88%"}
+Decision and conclusion.\
+If *p*-value is greater than $\alpha$ value, therefore the variances are assumed to be equal. Otherwise, variances are assumed not equal when *p*-value is less than $\alpha$ value.
+:::
+
+::::
+
+::: {.callout-note}
+(a) Confidence Intervals for the Difference Between Two Means (Difference in 	means of two normal distributions (independent populations), µ1 - µ2, variances equal and unknown)\
+
+Small sample case with unknown but **equal standard deviation**\
+
+>$df=n_1 + n_2 -2$\
+$(\bar{x_1}\ -\ \bar{x_2})\ \pm\ t_{\frac{\alpha}{2},\ df}\ s_p\sqrt{\frac{1}{n_1}\ +\ \frac{1}{n_2}}$\
+where, $s_p\ =\ \sqrt{\frac{(n_1-1)s_1^2\ +\ (n_2-1)s_2^2}{n_1+n_2-2}}$\
+
+<span style="color:green;">**Example 3.8**</span>\
+
+Nowadays the nursing profession is very marketable profession in Malaysia. A government hospital normally employs nurse who have been trained from both the government and private training centers. The hospital administrator is interested to determine which training centers seem to educate its nurses better. The hospital devised a test to be given to the newly graduated nurses entering the hospital. The scores are as follows (equal variances is assumed):\
+
++---------+----+----+----+----+----+----+----+----+----+----+----+----+----+
+| Govern  | 97 | 69 | 73 | 84 | 76 | 92 | 90 | 88 | 84 | 87 | 93 |    |    |
++---------+----+----+----+----+----+----+----+----+----+----+----+----+----+
+| Private | 88 | 99 | 65 | 69 | 97 | 84 | 85 | 89 | 91 | 90 | 87 | 91 | 72 |
++---------+----+----+----+----+----+----+----+----+----+----+----+----+----+
+
+Obtain a 90% CI for the difference in test scores. Give your interpretation.\
+
+Output SPSS:\
+
+<center>
+![Table 3.5: Group Statistics](images/ch3/table3_5.png){width=400px}
+</center>
+
+
+
+:::

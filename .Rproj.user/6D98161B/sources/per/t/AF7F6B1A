@@ -1,9 +1,9 @@
 {
     "id": "AF7F6B1A",
-    "path": "D:/R/Teaching/STA404 Manual Quarto/_quarto.yml",
+    "path": "D:/GitHub/uitm-sta404-online-manual/_quarto.yml",
     "project_path": "_quarto.yml",
     "type": "yaml",
-    "hash": "236138988",
+    "hash": "2803331431",
     "contents": "",
     "dirty": false,
     "created": 1697342281225.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "44,17",
-        "scrollLine": "27"
+        "cursorPosition": "24,23",
+        "scrollLine": "15"
     },
     "folds": "",
-    "lastKnownWriteTime": 1699237120,
+    "lastKnownWriteTime": 1700703101,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1699237120439,
+    "last_content_update": 1700703101769,
     "read_only": false,
     "read_only_alternatives": []
 }
