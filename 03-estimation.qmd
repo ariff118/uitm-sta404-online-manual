@@ -79,7 +79,7 @@ $\bar{X} = 54,\ \sigma = 6.0,\ n = 50, 95\%\ confident\ level\ \rightarrow z = 1
 $$
 \begin{aligned}
 \bar{X} – Z_{\frac{\alpha}{2}}\left(\frac{\sigma}{\sqrt{n}}\right) &\lt \mu \lt \bar{X} + Z_{\frac{\alpha}{2}}\left(\frac{\sigma}{\sqrt{n}}\right) \\
-54 – 1.96\left(\frac{60}{\sqrt{50}}\right) &\lt \mu \lt 54 + 1.96\left(\frac{60}{\sqrt{50}}\right) \\
+54 – 1.96\left(\frac{6.0}{\sqrt{50}}\right) &\lt \mu \lt 54 + 1.96\left(\frac{6.0}{\sqrt{50}}\right) \\
 54 - 1.663 &\lt \mu \lt 54 + 1.663 \\
 52.337 &\lt \mu \lt 55.663
 \end{aligned}
@@ -97,7 +97,7 @@ or
 $$
 \begin{aligned}
 \bar{X} &\pm Z_{\frac{\alpha}{2}}\left(\frac{\sigma}{\sqrt{n}}\right) \\
-54 &\pm 1.96\left(\frac{60}{\sqrt{50}}\right)\\
+54 &\pm 1.96\left(\frac{6.0}{\sqrt{50}}\right)\\
 54 &\pm 1.663 \\
 (52.337&,\ 55.663)
 \end{aligned}
