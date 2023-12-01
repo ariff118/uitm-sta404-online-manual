@@ -558,8 +558,8 @@ Table 1: Time taken (in minutes) to assemble one unit of product on each machine
 | **Machine 2** | 21 | 24 | 23 | 25 | 24 | 28 | 24 | 23 |
 +---------------+----+----+----+----+----+----+----+----+
 
-Table 2: Summary Statistics
-![](images/ch2/picture24.png){width=400px}
+
+![Table 2: Summary Statistics](images/ch2/picture24.png){width=400px}
 </center>
   a. Compute the value of **A** and **B**.
   b. Determine which machine is more consistent in their time taken to assemble one-unit product.
@@ -625,6 +625,10 @@ Descriptive Statistics
 +----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+----+----+----+----+---+
 | VB | 5.8 | 5.6 | 5.7 | 5.8 | 6.1 | 6.4 | 6.7 | 6.7 | 6.7 | 6.8 | 6.5| 7.0| 6.9| 6.5|6.4|
 +----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+----+----+----+----+---+
+
+<center>
+![SPSS Output: Boxplot](images/ch2/picture30.png)
+</center>
 
   a.  Calculate the mean and standard deviation for Valley Bank waiting times.
   b.  From the above box-and-whisker plots of waiting times for both Providence and Valley banks, comment on the shape of distribution for each plot.

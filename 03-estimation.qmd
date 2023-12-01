@@ -301,11 +301,13 @@ One can be 99% confident that the population mean number of home fires started b
 </center>
 
 $$
-\bar{X} \pm t_{\frac{\alpha}{2},df}\left(\frac{s}{\sqrt{n}}\right),\ df=6\\
-7041.43 \pm 3.707\left(\frac{1610.274}{\sqrt{7}}\right)\\
-7041.43 \pm 2256.18 \\
-(4785.25,\ 9297.61) \\
-or
+\begin{aligned}
+\bar{X} &\pm t_{\frac{\alpha}{2},df}\left(\frac{s}{\sqrt{n}}\right),\ df=6\\
+7041.43 &\pm 3.707\left(\frac{1610.274}{\sqrt{7}}\right)\\
+7041.43 &\pm 2256.18 \\
+(4785.25&,\ 9297.61) \\
+&or
+\end{aligned}
 $$
 
 From the SPSS output, 99% confidence interval is (4784.99,9297.87).\
@@ -460,13 +462,14 @@ If *p*-value is greater than $\alpha$ value, therefore the variances are assumed
 ::::
 
 ::: {.callout-note}
-(a) Confidence Intervals for the Difference Between Two Means (Difference in 	means of two normal distributions (independent populations), µ1 - µ2, variances equal and unknown)\
+## <span style="color:blue;">(a) Confidence Intervals for the Difference Between Two Means (Difference in 	means of two normal distributions (independent populations), $\mu_1 - \mu_2$, variances equal and unknown)</span>\
 
 Small sample case with unknown but **equal standard deviation**\
 
->$df=n_1 + n_2 -2$\
+$df=n_1 + n_2 -2$\
 $(\bar{x_1}\ -\ \bar{x_2})\ \pm\ t_{\frac{\alpha}{2},\ df}\ s_p\sqrt{\frac{1}{n_1}\ +\ \frac{1}{n_2}}$\
 where, $s_p\ =\ \sqrt{\frac{(n_1-1)s_1^2\ +\ (n_2-1)s_2^2}{n_1+n_2-2}}$\
+:::
 
 <span style="color:green;">**Example 3.8**</span>\
 
@@ -486,6 +489,330 @@ Output SPSS:\
 ![Table 3.5: Group Statistics](images/ch3/table3_5.png){width=400px}
 </center>
 
+<span style="color:red;">**Answer**</span>
+
+$$
+\begin{aligned}
+&df = n_1 + n_2 - 2 = 11 + 13 - 2 = 22 \\
+&s_p = \sqrt{\frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2}} \\
+&s_p = \sqrt{\frac{(11 - 1)(8.818)^2 + (13 - 1)(10.375)^2}{22}} = 9.698 \\
+&\\
+&(\bar{x_1} - \bar{x_2})\ \pm\ t_{\frac{\alpha}{2}}s_p\sqrt{\frac{1}{n_1} + \frac{1}{n_2}} \\
+&(84.82 - 85.15)\ \pm\ (1.717)(9.698)(0.410) \\
+&-0.33\ \pm\ 6.827 \\
+&(-7.157,\ 6.497)
+\end{aligned}
+$$
+**Interpretation:** With 90% confident, there is no different on the number of the newly graduate nurses entering hospitals between government and private sector since 0 value is included in the interval.\
+
+:::{.callout-note}
+## <span style="color:blue;">(b) Confidence Intervals for the Difference Between Two Means (Difference in means of two normal distributions (independent populations), $\mu_1 - \mu_2$, variances unequal and unknown)</span>
+
+Formula for the *t* confidence interval:\
+
+$$
+\begin{aligned}
+(\bar{X_1} - \bar{X_2}) - t_{\frac{\alpha}{2},df}\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}\ \lt\ (\mu_1 &- \mu_2)\ \lt\ (\bar{X_1} - \bar{X_2}) + t_{\frac{\alpha}{2},df}\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}} \\
+\\
+&or \\
+\\
+(\bar{X_1} - \bar{X_2}) \pm t_{\frac{\alpha}{2},df}\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}\ \ \ \ \ &with\ df=\frac{\left[\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}\right]}{\frac{\left(\frac{s_1^2}{n_1}\right)^2}{n_1-1} + {\frac{\left(\frac{s_2^2}{n_2}\right)^2}{n_2-1}}} 
+\end{aligned}
+$$
+:::
+
+<span style="color:green;">**Example 3.9**</span>\
+A researcher wishes to see if the average weights of newborn male infants are different from the average weights of newborn female infants. She selects a random sample of 10 male infants and finds the mean weight is 123 ounces and the standard deviation of the sample is 8 ounces. She selects a random sample of 8 female infants and finds that the mean weight is 116 ounces and the standard deviation of the sample is 5 ounces. Find the 95% confidence interval for the difference between the means weight of male and female infants (Equal variances is not assumed). Assume that the variables are normally distributed.\
 
 
+<span style="color:red;">**Answer:**</span>\
+
+:::: {.columns}
+
+::: {.column width="48%"}
+$$
+\begin{aligned}
+(\bar{X_1} - \bar{X_2}) &\pm t_{\frac{0.05}{2},15}\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}} \\
+7\ &\pm\ (2.131)(3.086) \\
+7\ &\pm\ 6.576 \\
+(0.424&,\ 13.576)
+\end{aligned}
+$$
+:::
+
+::: {.column width="4%"}
+
+:::
+
+::: {.column width="48%"}
+$$
+df=\frac{\left[\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}\right]}{\frac{\left(\frac{s_1^2}{n_1}\right)^2}{n_1-1} + {\frac{\left(\frac{s_2^2}{n_2}\right)^2}{n_2-1}}} =\ 15.258\ = 15
+$$
+:::
+
+::::
+
+**Interpretation:** With 95% confident, there is enough evidence to conclude that the mean weight of male and female infants is significant different because 0 value is not included in the interval.\
+
+<span style="color:green;">**Example 3.10**</span>\
+
+Carbohydrates in Candies: The number of grams of carbohydrates contained in 1-gram servings of randomly selected chocolate and non-chocolate candy is listed here. Based on the 90% confidence interval, is there sufficient evidence to conclude that the difference in the means is statistically significant?\
+
++----------------+----+----+----+----+----+----+----+----+----+----+----+----+----+
+| Chocolate:     | 29 | 25 | 17 | 36 | 41 | 25 | 32 | 29 | 38 | 34 | 24 | 27 | 29 |
++----------------+----+----+----+----+----+----+----+----+----+----+----+----+----+
+| Non chocolate: | 41 | 41 | 37 | 29 | 30 | 38 | 39 | 10 | 29 | 55 | 29 |    |    |
++----------------+----+----+----+----+----+----+----+----+----+----+----+----+----+
+
+Based on the above data, the analysis has been done and the following tables are the output: from SPSS.\
+
+<center>
+![Table 3.6: Descriptive Statistics](images/ch3/table3_6.png){width=400px}
+</center>
+
+<center>
+![Table 3.7: Independent Samples Test](images/ch3/table3_7.png)
+</center>
+
+<span style="color:red;">**Answer**</span>\
+
+::: {.columns}
+
+::: {.column width="20%"}
+**Step 1:** Checking for Equality of Variances using Levene's Test
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="75%"}
+$H_0:\sigma_1^2=\sigma_2^2$ (equal variances assumed)\
+$H_1:\sigma_1^2\ne\sigma_2^2$ (equal variances not assumed)\
+
+Refer to column "Leven's Test for Equality of Variances" we obtained:
+*p*-value = 0.189\
+Since *p*-value = 0.189 > $\alpha$ = 0.05, we reject $H_1$ and cocluded that equal variances is assumed.
+:::
+
+::: {.column width="20%"}
+**Step 2:** Construct the 90% Confidence Interval
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="75%"}
+$df = n_1+n_2-1 = 13+11-2 = 22, t_{\alpha/2,22} = 1.717, \alpha=0.10$\
+$$
+\begin{aligned}
+&s_p = \sqrt{\frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2}} \\
+&\\
+&(\bar{x_1} - \bar{x_2})\ \pm\ t_{\frac{\alpha}{2}}s_p\sqrt{\frac{1}{n_1} + \frac{1}{n_2}} \\
+&-4.671\ \pm\ (1.717)(3.666) \\
+&-4.671\ \pm\ 6.295 \\
+&(-10.966, 1.624)
+\end{aligned}
+$$
+:::
+
+:::
+
+**Interpretation:** With 90% confident, there is no significant difference on the number of grams of carbohydrates contained in 1-gram servings between chocolate and nonchocolate candy because 0 value is included in the interval.\
+
+**CASE 3: Dependent Samples: (Paired- t test)**\
+
+Mean difference of two normal distributions for paired samples, $\mu_d$\
+
+$$
+\begin{aligned}
+&d - t_{\frac{\alpha}{2},df}\frac{s_d}{\sqrt{n}}\ \lt\ \mu_d\ \lt\ d + t_{\frac{\alpha}{2},df}\frac{s_d}{\sqrt{n}}\ \ \ \ or\ \ \ \ d \pm t_{\frac{\alpha}{2},df}\frac{s_d}{\sqrt{n}} \\
+&df = n-1\ where\ n\ is\ the\ number\ of\ pairs
+\end{aligned}
+$$
+
+<span style="color:green;">**Example 3.11**</span>\
+
+A sample of nine local banks shows their deposits (in billions of ringgit Malaysia) 3 years ago and their deposits (in billions of ringgit Malaysia) today. At α = 0.05, can it be concluded that the average in deposits for the banks is greater today than it was 3 years ago? Determine the 95% confidence interval for the difference between the means for the data given.\
+
+|             |       |      |       |       |      |      |      |     |      |
+|-------------|-------|------|-------|-------|------|------|------|-----|------|
+| Bank        | 1     | 2    | 3     | 4     | 5    | 6    | 7    | 8   | 9    |
+| 3 years ago | 11.42 | 8.41 | 3.98  | 7.37  | 2.28 | 1.10 | 1.00 | 0.9 | 1.35 |
+| Today       | 16.69 | 9.44 |  6.53 | 5.58  | 2.92 | 1.88 | 1.78 | 1.5 | 1.22 |
+
+Output from SPSS:\
+
+<center>
+![Table 3.8: Paired Samples Statistics](images/ch3/table3_8.png){width=400px}
+</center>
+
+<center>
+![Table 3.9: Paired Samples Test](images/ch3/table3_9.png)
+</center>
+
+<span style="color:greem;">**Answer:**</span>\
+
+$$
+\begin{aligned}
+d &\pm\ t_{\frac{\alpha}{2},df}\frac{s_d}{\sqrt{n}} \\
+-1.08111\ &\pm\ t_{\frac{0.05}{2},8}\frac{1.93278}{\sqrt{9}} \\
+-1.08111\ &\pm\ 2.306\frac{1.93278}{\sqrt{9}} \\
+-1.08111\ &\pm\ 1.48912 \\
+(-2.257023,&\ 0.40801) \\
+\end{aligned}
+$$
+
+Based on the output SPSS, the confidence interval is (-2.57024, 0.40802).\
+
+**Interpretation:** With 95% confident, there is no enough evidence to conclude that the average in deposits for the banks is greater today than it was 3 years ago since 0 value is included in the interval.\
+
+<span style="color:green;">**Example 3.12**</span>\
+
+A dietitian wishes to see if a person’s cholesterol level will change if the diet is supplemented by a certain mineral. Six patients were pretested, and then they took the mineral supplement for a 6-week period. The results are shown in the table. (Cholesterol level is measured in milligrams per deciliter.) Based on the 90% confidence interval, can it be concluded that the cholesterol level has been changed? Assume the variable is approximately normally distributed.\
+
+|         |     |     |     |     |     |     |
+|---------|:---:|:---:|:---:|:---:|:---:|:---:|
+| Patient |  1  |  2  |  3  |  4  |  5  |  6  |
+| Before  | 210 | 235 | 208 | 190 | 172 | 244 |
+| After   | 190 | 170 | 210 | 188 | 173 | 228 |
+
+Output SPSS:\
+
+<center>
+![Table 3.10: Paired Samples Statistics](images/ch3/table3_10.png){width=400px}
+</center>
+
+<center>
+![Table 3.11: Paired Samples Test](images/ch3/table3_11.png)
+</center>
+
+<span style="color:red;">**Answer:**</span>\
+
+$$
+\begin{aligned}
+d - t_{\frac{\alpha}{2},df}\frac{s_d}{\sqrt{n}}\ \lt\ &\mu_d\ \lt\ d + t_{\frac{\alpha}{2},df}\frac{s_d}{\sqrt{n}} \\
+16.667 - (2.015)(10.366)\ \lt\ &\mu_d\ \lt\ 16.667 + (2.015)(10.366) \\
+16.667 - 20.887\ \lt\ &\mu_d\ \lt\ 16.667 + 20.887 \\
+-4.22\ \lt\ &\mu_d\ \lt\ 37.554 \\
+\end{aligned}
+$$
+
+**Interpretation:** With 90% confident, there is no enough evidence to conclude the cholesterol level has been changed since 0 value is included in the interval.\
+
+## Exercise 3\
+
+1. It usually takes Ali about 40 minutes to travel from his home to office. Since the LRT service started its operation, he feels that LRT takes a lesser time for him to reach office. He recorded the time and below is the output.\
+
+<center>
+![Table 3.12: One-Sample Statistics](images/ch3/table3_12.png){width=400px}
+</center>
+
+  a)	Find the point estimate for the mean travel time by Ali.\
+  b)	Construct a 95% confidence interval for the mean travel time (in minutes) taken by Ali to reach his office. Interpret.\
+
+::: {.column-margin}
+[Answer]{style="color:red;"}\
+a) 40 minutes\
+b) (34.5738, 37.3428)
+:::
+    
+2.	Upright vacuum cleaner has either a hard body type or a soft body type. Shown below are the output from SPSS for each type of vacuum cleaner.\
+
+<center>
+![Table 3.13: Group Statistics](images/ch3/table3_13.png){width=400px}
+</center>
+
+<center>
+![Table 3.14: Independent Samples Test](images/ch3/table3_14.png)
+</center>
+
+  a)	Calculate the value of A, and B.\
+  b)	Construct a 95% confidence interval for the difference in means for hard body type or a soft body type vacuum cleaner. Assume the population variances are equal.\
+  
+::: {.column-margin}
+[Answer]{style="color:red;"}\
+a) A = 21, B =2.747\
+b) (-0.375, 5.865)
+:::
+
+3.	Ahmad and Ali work at same company. They both live in the same neighborhood in PJ. Ahmad takes Expressway A to work, while Ali takes expressway B. Ahmad claims that his route takes him faster to work.  Both recorded the time (in minutes) it took them to reach their office for the last 10 working days. The data shown below:\
+
++-------+----+----+----+----+----+----+----+----+----+----+
+| Ahmad | 29 | 30 | 28 | 31 | 28 | 29 | 26 | 33 | 32 | 27 |
++-------+----+----+----+----+----+----+----+----+----+----+
+| Ali   | 30 | 28 | 34 | 39 | 35 | 29 | 32 | 28 | 27 | 33 |
++-------+----+----+----+----+----+----+----+----+----+----+
+
+<center>
+![Table 3.15: Group Statistics](images/ch3/table3_15.png){width=400px}
+</center>
+
+<center>
+![Table 3.16: Independent Samples Test](images/ch3/table3_16.png)
+</center>
+
+Construct a 95% confidence interval for the difference between mean time travel for Ahmad and Ali. Assume the population variances are equal.\
+
+::: {.column-margin}
+[Answer]{style="color:red;"}\
+(-5.1264, 0.7264)
+:::
+
+4. A ninth-grade teacher wishes to see if a new spelling program will reduce the spelling errors in his students’ writing. The number of spelling errors made by the students in a five-page report before the program and after the program were recorded, and the output are shown below.\
+
+<center>
+![Table 3.17: Paired Samples Statistics](images/ch3/table3_17.png){width=400px}
+</center>
+
+<center>
+![Table 3.18: Paired Samples Test](images/ch3/table3_18.png)
+</center>
+
+  a) Determine the value of A.\
+  b) Construct the 95% confidence interval of the mean difference of spelling errors in students’ writing between before and after attend a new spelling program.\
+
+::: {.column-margin}
+[Answer]{style="color:red;"}\
+a) A = 2.43\
+b) (0.5155, 4.3445)
+:::
+
+## Tutorial 3\
+
+1. A tax collector wishes to see if the mean values of the tax-exempt properties are different for two cities. The data are given in millions of dollars. The output for the data is shown below. $\alpha=0.05$,\
+
+<center>
+![Table 3.19: Group Statistics](images/ch3/table3_19.png){width=400px}
+</center>
+
+<center>
+![Table 3.20: Independent Samples Test](images/ch3/table3_20.png)
+</center>
+
+a) Determine the value of **P**, **Q** and **R**.\
+b) Construct a 95% confidence interval for the difference between mean values of the tax-exempt properties for City A and City B. Assume the population variances are equal.\
+
+::: {.column-margin}
+[**Answer**]{style="color:red;"}\
+a)	P = 18.18625; Q = 19.308; R = 30\
+b)	(-57.615, 21.239)
+:::
+
+2. In a survey on the petrol consumption of cars, a random sample of 12 cars with 1.6 litre engines was compared with a random sample of 15 cars with 1.6 litre engines. The outputs are shown below:\
+
+<center>
+![Table 3.21: Group Statistics](images/ch3/table3_21.png){width=400px}
+</center>
+
+<center>
+![Table 3.22: Independent Samples Test](images/ch3/table3_22.png)
+</center>
+
+Calculate a 90% confidence interval for the difference the two mean petrol consumption figures.  The data are normally distributed and equal variances assumed.\
+
+::: {.column-margin}
+[**Answer**]{style="color:red;"}\
+(-7.91326, -4.30008)
 :::
