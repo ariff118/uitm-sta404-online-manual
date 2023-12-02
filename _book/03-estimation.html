@@ -223,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
 <li>A <strong>confidence interval</strong> is a specific interval estimate of a parameter determined by using data obtained from a sample and by using the specific confidence level of the estimate.<br>
 </li>
-<li>The <strong>confidence level</strong> of an interval estimate of a parameter is the probability that the interval estimate will contain the parameter. It is denoted by (1-)100%. The is called a <strong>significance level</strong> (probability that the parameter is not within the interval).<br>
+<li>The <strong>confidence level</strong> of an interval estimate of a parameter is the probability that the interval estimate will contain the parameter. It is denoted by (1-<span class="math inline">\(\alpha\)</span>)100%. The is called a <strong>significance level</strong> (probability that the parameter is not within the interval).<br>
 </li>
 <li>In constructing a confidence interval, researchers can choose any value for confidence level for example 90%, 95% and 99%.<br>
 </li>
@@ -325,7 +325,7 @@ or</p>
 </div>
 <p>Hence, one can be 99% confident that the mean number of customers that the store averages is between 350 and 374 customers per hour (rounding values).</p>
 </section>
-<section id="case-2-confidence-interval-of-the-mean-for-sigma-is-unknown-and-large-sample-size-n-ge-30" class="level4" data-number="3.3.1.2">
+<section id="case-2-confidence-interval-of-the-mean-for-sigma-is-unknown-and-large-sample-size-n-ge-30" class="level4 page-columns page-full" data-number="3.3.1.2">
 <h4 data-number="3.3.1.2" class="anchored" data-anchor-id="case-2-confidence-interval-of-the-mean-for-sigma-is-unknown-and-large-sample-size-n-ge-30"><span class="header-section-number">3.3.1.2</span> <strong>CASE 2: Confidence Interval of the Mean for <span class="math inline">\(\sigma\)</span> is Unknown and Large Sample Size (<span class="math inline">\(n \ge 30\)</span>)</strong></h4>
 <p><span class="math display">\[
 \bar{X} – Z_{\frac{\alpha}{2}}\left(\frac{s}{\sqrt{n}}\right) \lt \mu \lt \bar{X} + Z_{\frac{\alpha}{2}}\left(\frac{s}{\sqrt{n}}\right)\ \ \ \ \ or\ \ \ \ \ \ \bar{X} \pm Z_{\frac{\alpha}{2}}\left(\frac{s}{\sqrt{n}}\right)
@@ -393,9 +393,39 @@ or</p>
 6.765 &amp;\lt \mu \lt 15.417
 \end{aligned}
 \]</span></p>
-<p>One can be 90% confident that the population mean of the assets of all credit unions is between RM6.765 million and RM15.417 million, based on a sample of 30 credit unions.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You need to calculate the mean of the data first.</p>
+</div>
+</div>
+</div></div><p>One can be 90% confident that the population mean of the assets of all credit unions is between RM6.765 million and RM15.417 million, based on a sample of 30 credit unions.</p>
 <p><strong>Output from SPSS</strong></p>
-<!-- Insert SPSS Output here -->
+<center>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ch3/table3_1.png" class="img-fluid figure-img" width="400"></p>
+<p></p><figcaption class="figure-caption">Table 3.1: One-Sample Statistics</figcaption><p></p>
+</figure>
+</div>
+</center>
+<center>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ch3/table3_2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Table 3.2: One-Sample Test</figcaption><p></p>
+</figure>
+</div>
+</center>
 <p>Calculation based on the above output:</p>
 <p><span class="math display">\[
 \begin{aligned}
@@ -513,7 +543,7 @@ or</p>
 </p>
 </section>
 </section>
-<section id="estimation-the-difference-between-two-means" class="level3" data-number="3.3.2">
+<section id="estimation-the-difference-between-two-means" class="level3 page-columns page-full" data-number="3.3.2">
 <h3 data-number="3.3.2" class="anchored" data-anchor-id="estimation-the-difference-between-two-means"><span class="header-section-number">3.3.2</span> Estimation the Difference Between Two Means<br>
 </h3>
 <p><strong>CASE 1: Testing the Difference Between Two Means of Independent Samples: Using the z Test</strong><br>
@@ -561,7 +591,7 @@ or,<br>
 </p>
 <p><span style="color:red;"><strong>Answer</strong></span><br>
 </p>
-<p>Given that <span class="math inline">\(\bar{X-1}=39.6,\ \bar{X_2}=35.4,\ \sigma_1=6.3,\ \sigma_2=5.8,\ n_1=35,\ n_2=35\)</span><br>
+<p>Given that <span class="math inline">\(\bar{X_1}=39.6,\ \bar{X_2}=35.4,\ \sigma_1=6.3,\ \sigma_2=5.8,\ n_1=35,\ n_2=35\)</span><br>
 </p>
 <p><span class="math display">\[
 \begin{aligned}
@@ -571,7 +601,10 @@ or,<br>
 &amp;(1.363,\ 7.037)
 \end{aligned}
 \]</span></p>
-<blockquote class="blockquote">
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><span class="math inline">\(Z_{\frac{\alpha}{2}}=Z_{\frac{0.05}{2}}=1.96\)</span>, refer to Table 3 of Statistical Table</p>
+</div></div><blockquote class="blockquote">
 <p>Interpretation:<br>
 With 95% confident, there is significant different on the average amount of time spent per week on leisure activities between the two-age group since 0 value is not included in the interval.</p>
 </blockquote>
@@ -890,7 +923,7 @@ Since <em>p</em>-value = 0.189 &gt; <span class="math inline">\(\alpha\)</span> 
 </p>
 <p><span class="math display">\[
 \begin{aligned}
-&amp;d - t_{\frac{\alpha}{2},df}\frac{s_d}{\sqrt{n}}\ \lt\ \mu_d\ \lt\ d + t_{\frac{\alpha}{2},df}\frac{s_d}{\sqrt{n}}\ \ \ \ or\ \ \ \ d \pm t_{\frac{\alpha}{2},df}\frac{s_d}{\sqrt{n}} \\
+&amp;\bar{d} - t_{\frac{\alpha}{2},df}\frac{s_d}{\sqrt{n}}\ \lt\ \mu_d\ \lt\ \bar{d} + t_{\frac{\alpha}{2},df}\frac{s_d}{\sqrt{n}}\ \ \ \ or\ \ \ \ \bar{d} \pm t_{\frac{\alpha}{2},df}\frac{s_d}{\sqrt{n}} \\
 &amp;df = n-1\ where\ n\ is\ the\ number\ of\ pairs
 \end{aligned}
 \]</span></p>
@@ -1265,11 +1298,88 @@ b) (-57.615, 21.239)</p>
 <p>Calculate a 90% confidence interval for the difference the two mean petrol consumption figures. The data are normally distributed and equal variances assumed.<br>
 </p>
 
+<div class="no-row-height column-margin column-container"><div class="">
+<p><span style="color:red;"><strong>Answer</strong></span><br>
+(-7.91326, -4.30008)</p>
+</div></div><ol start="3" type="1">
+<li>The number of calories per candy bar for a random sample standard-size candy bars are estimated. Below is the output.<br>
+</li>
+</ol>
+<center>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ch3/table3_23.png" class="img-fluid figure-img" width="400"></p>
+<p></p><figcaption class="figure-caption">Table 3.23: One-Sample Statistics</figcaption><p></p>
+</figure>
+</div>
+</center>
+<ol type="a">
+<li>Show that the standard error of the mean is 6.368.<br>
+</li>
+<li>Construct a 98% confidence interval for the mean number of calories per candy bar. Interpret.<br>
+</li>
+</ol>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><span style="color:red;"><strong>Answer</strong></span><br>
+a) Std. Error Mean = <span class="math inline">\(\frac{23.827}{\sqrt{14}}=6.36803\)</span><br>
+b) (226.335, 260.085)</p>
+</div></div><ol start="4" type="1">
+<li>A statistics lecturer intends to investigate whether there is sufficient evidence to conclude that the average score was different from the expected average score of 74. A random sample of 15 students were selected and analysed using SPSS. The result obtained is as follow.<br>
+</li>
+</ol>
+<center>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ch3/table3_24.png" class="img-fluid figure-img" width="400"></p>
+<p></p><figcaption class="figure-caption">Table 3.24: One-Sample Statistics</figcaption><p></p>
+</figure>
+</div>
+</center>
+<ol type="a">
+<li>Identify the statistical test used for this study.<br>
+</li>
+<li>Show that the standard error of the mean is 3.5002.<br>
+</li>
+<li>Construct a 95% confidence interval for the average score.<br>
+</li>
+<li>Based on the confidence interval in c), does the average score differ 74? Give a reason to support your answer.<br>
+</li>
+</ol>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><span style="color:red;"><strong>Answer</strong></span><br>
+a) One Sample T-Test<br>
+b) Std. Error Mean = <span class="math inline">\(\frac{13.5564}{\sqrt{15}}=3.5502\)</span><br>
+c) (66.9791, 81.9949)</p>
+</div></div><ol start="5" type="1">
+<li>The table below shows the summary statistics for the travelled distance from home to work (in km) by 28 employees of AA Company.<br>
+</li>
+</ol>
+<center>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ch3/table3_25.png" class="img-fluid figure-img" width="400"></p>
+<p></p><figcaption class="figure-caption">Table 3.25: One-Sample Statistics</figcaption><p></p>
+</figure>
+</div>
+</center>
+<ol type="a">
+<li>Find the value of <strong>X</strong>.<br>
+</li>
+<li>Construct a 90% confidence interval for the true mean travelled distance from home to work (in km) by the employees of AA Company.<br>
+</li>
+<li>Based on the confidence interval in b), is the mean travelled distance from home to work by the employees of AA company different from 15 km? Give a reason to support your answer.<br>
+</li>
+</ol>
+
 
 
 <div class="no-row-height column-margin column-container"><div class="">
 <p><span style="color:red;"><strong>Answer</strong></span><br>
-(-7.91326, -4.30008)</p>
+a) <span class="math inline">\(X=(0.4914)(\sqrt{28})=2.6002\)</span><br>
+b) (13.4631, 15.1369)<br>
+c) No.&nbsp;Since the value of mean is inside the interval limit.</p>
 </div></div></section>
 
 </main> <!-- /main -->

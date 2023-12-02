@@ -25,7 +25,7 @@ In estimation, the calculation margin of error is calculated based on point esti
 -	The interval constructed around the point estimate, but the estimate may or may not contain the value of the parameter being estimated.\
 -	Each interval constructed also regards a given confidence level and it is called a confidence interval.\
 -	A **confidence interval** is a specific interval estimate of a parameter determined by using data obtained from a sample and by using the specific confidence level of the estimate.\
--	The **confidence level** of an interval estimate of a parameter is the probability that the interval estimate will contain the parameter. It is denoted by (1-)100%. The is called a **significance level** (probability that the parameter is not within the interval).\
+-	The **confidence level** of an interval estimate of a parameter is the probability that the interval estimate will contain the parameter. It is denoted by (1-$\alpha$)100%. The is called a **significance level** (probability that the parameter is not within the interval).\
 -	In constructing a confidence interval, researchers can choose any value for confidence level for example 90%, 95% and 99%.\
 
 ### Interval Estimate for a Mean (when σ is Known/Unknown) 
@@ -176,11 +176,25 @@ $$
 \end{aligned}
 $$
 
+::: {.column-margin}
+
+::: {.callout-tip}
+You need to calculate the mean of the data first.
+:::
+
+:::
+
 One can be 90% confident that the population mean of the assets of all credit unions is between RM6.765 million and RM15.417 million, based on a sample of 30 credit unions.
 
 **Output from SPSS**
 
-<!-- Insert SPSS Output here -->
+<center>
+![Table 3.1: One-Sample Statistics](images/ch3/table3_1.png){width=400px}
+</center>
+
+<center>
+![Table 3.2: One-Sample Test](images/ch3/table3_2.png)
+</center>
 
 Calculation based on the above output:
 
@@ -368,7 +382,7 @@ A study using two random samples of 35 people each found that the average amount
 
 <span style="color:red;">**Answer**</span>\
 
-Given that $\bar{X-1}=39.6,\ \bar{X_2}=35.4,\ \sigma_1=6.3,\ \sigma_2=5.8,\ n_1=35,\ n_2=35$\
+Given that $\bar{X_1}=39.6,\ \bar{X_2}=35.4,\ \sigma_1=6.3,\ \sigma_2=5.8,\ n_1=35,\ n_2=35$\
 
 $$
 \begin{aligned}
@@ -378,6 +392,10 @@ $$
 &(1.363,\ 7.037)
 \end{aligned}
 $$
+
+::: {.column-margin}
+$Z_{\frac{\alpha}{2}}=Z_{\frac{0.05}{2}}=1.96$, refer to Table 3 of Statistical Table
+:::
 
 >Interpretation:\
 With 95% confident, there is significant different on the average amount of time spent per week on leisure activities between the two-age group since 0 value is not included in the interval.
@@ -627,7 +645,7 @@ Mean difference of two normal distributions for paired samples, $\mu_d$\
 
 $$
 \begin{aligned}
-&d - t_{\frac{\alpha}{2},df}\frac{s_d}{\sqrt{n}}\ \lt\ \mu_d\ \lt\ d + t_{\frac{\alpha}{2},df}\frac{s_d}{\sqrt{n}}\ \ \ \ or\ \ \ \ d \pm t_{\frac{\alpha}{2},df}\frac{s_d}{\sqrt{n}} \\
+&\bar{d} - t_{\frac{\alpha}{2},df}\frac{s_d}{\sqrt{n}}\ \lt\ \mu_d\ \lt\ \bar{d} + t_{\frac{\alpha}{2},df}\frac{s_d}{\sqrt{n}}\ \ \ \ or\ \ \ \ \bar{d} \pm t_{\frac{\alpha}{2},df}\frac{s_d}{\sqrt{n}} \\
 &df = n-1\ where\ n\ is\ the\ number\ of\ pairs
 \end{aligned}
 $$
@@ -816,3 +834,54 @@ Calculate a 90% confidence interval for the difference the two mean petrol consu
 [**Answer**]{style="color:red;"}\
 (-7.91326, -4.30008)
 :::
+
+3. The number of calories per candy bar for a random sample standard-size candy bars are estimated. Below is the output.\
+
+<center>
+![Table 3.23: One-Sample Statistics](images/ch3/table3_23.png){width=400px}
+</center>
+
+  a) Show that the standard error of the mean is 6.368.\
+  b) Construct a 98% confidence interval for the mean number of calories per candy bar. Interpret.\
+  
+::: {.column-margin}
+[**Answer**]{style="color:red;"}\
+a)	Std. Error Mean = $\frac{23.827}{\sqrt{14}}=6.36803$\
+b)	(226.335, 260.085)
+:::
+  
+4. A statistics lecturer intends to investigate whether there is sufficient evidence to conclude that the average score was different from the expected average score of 74. A random sample of 15 students were selected and analysed using SPSS. The result obtained is as follow.\
+
+<center>
+![Table 3.24: One-Sample Statistics](images/ch3/table3_24.png){width=400px}
+</center>
+
+  a) Identify the statistical test used for this study.\
+  b) Show that the standard error of the mean is 3.5002.\
+  c) Construct a 95% confidence interval for the average score.\
+  d) Based on the confidence interval in c), does the average score differ 74? Give a reason to support your answer.\
+
+::: {.column-margin}
+[**Answer**]{style="color:red;"}\
+a) One Sample T-Test\
+b) Std. Error Mean = $\frac{13.5564}{\sqrt{15}}=3.5502$\
+c) (66.9791, 81.9949)
+:::
+
+5. The table below shows the summary statistics for the travelled distance from home to work (in km) by 28 employees of AA Company.\
+
+<center>
+![Table 3.25: One-Sample Statistics](images/ch3/table3_25.png){width=400px}
+</center>
+
+  a) Find the value of **X**.\
+  b) Construct a 90% confidence interval for the true mean travelled distance from home to work (in km) by the employees of AA Company.\
+  c) Based on the confidence interval in b), is the mean travelled distance from home to work by the employees of AA company different from 15 km? Give a reason to support your answer.\
+
+::: {.column-margin}
+[**Answer**]{style="color:red;"}\
+a) $X=(0.4914)(\sqrt{28})=2.6002$\
+b) (13.4631, 15.1369)\
+c) No. Since the value of mean is inside the interval limit.
+:::
+
